@@ -1,0 +1,138 @@
+/* ---------------- custom css sheet ---------------- */
+
+/* -- GLOBAL --*/
+body {
+	background: #f4f5f7;
+}
+p, h3, h4, h5 {
+	color: #2f2f2f;
+	margin: 0 auto;
+}
+.row {
+	padding: 0 2em 0 2em;
+	max-width: 800px;
+}
+
+/* -- SECTIONS -- */
+.top-section {
+	margin-top: 3em;
+	text-align: center;
+}
+
+.about-id-section {
+	margin-top: 1.5em;
+	margin-bottom: 4em;
+}
+
+.internship-specifics {
+	margin-top: 1.5em;
+}
+
+.position-descriptions {}
+
+.position-row {
+	padding-bottom: 2em;
+}
+
+.apply-now {
+	margin-bottom: 3em;
+	margin-top: 2em;
+}
+
+.footer-bar {
+	height: 70px;
+	background: #000;
+	width: 100%;
+}
+
+/* -- TEXT -- */
+h1 {
+	color: #6c7f92;
+	margin-bottom: .5em;
+}
+
+h2 {
+	color: #d62828;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	margin-bottom: .5em;
+	margin-top: 2em;
+}
+
+h5 {
+	font-weight: 400;
+}
+
+.quote-text {
+	font-family: "Palatino", serif;
+	font-size: .8em;
+	max-width: 180px;
+}
+.attribution {
+	max-width: 180px;
+	font-size: .9em;
+	font-weight: 700;
+}
+
+ul {
+	margin-bottom: 4em;
+	margin-top: 1em;
+}
+
+.position {
+	font-size: 1.1em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.learn-more {
+	color: #6c7f92;
+	text-align: right;
+	font-size: .9em;
+	font-weight: 700;
+}
+
+.apply-blurb {
+	color: #6c7f92;
+	font-size: .5em;
+	letter-spacing: initial;
+}
+
+/* -- BUTTONS -- */
+button {
+	border-bottom: 5px solid #ab2020;
+	font-size: 1em;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-bottom: 4em;
+	margin-top: 1.7em;
+	padding: .8em 0 .8em 0;
+	width: 300px;
+}
+
+/* -- IMAGES -- */
+.banner-img1 {
+	background: url(../img/editorial_pic.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.banner-img2 {
+	background: url(../img/chinatown.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.image-holder {
+	height: 458px;
+	width: 100%;
+}
+
+.quote-photo {
+	margin: 3em 0 1em 0;
+}
