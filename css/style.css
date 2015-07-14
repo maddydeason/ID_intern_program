@@ -8,6 +8,15 @@ p, h3, h4, h5 {
 	color: #2f2f2f;
 	margin: 0 auto;
 }
+
+h1, h2, h3, h4, h5, h6, li {
+	font-family: 'Proxima Nova', 'Helvetica', sans-serif; 
+}
+
+p {
+	font-family: 'Palatino', 'Times New Roman', sans-serif; 
+}
+
 .row {
 	padding: 0 2em 0 2em;
 	max-width: 800px;
@@ -68,11 +77,15 @@ h5 {
 	font-weight: 400;
 }
 
+h6, li {
+	letter-spacing: .5px; 
+}
+
 .quote-text {
-	font-family: "Palatino", serif;
 	font-size: .8em;
 	max-width: 180px;
 }
+
 .attribution {
 	max-width: 180px;
 	font-size: .9em;
@@ -85,8 +98,7 @@ ul {
 }
 
 .position {
-	font-size: 1.1em;
-	font-weight: 700;
+	font: 700 1.1em 'Proxima Nova', 'Helvetica', sans-serif;
 	letter-spacing: 1px;
 	text-align: left;
 	text-transform: uppercase;
@@ -95,13 +107,12 @@ ul {
 .learn-more {
 	color: #6c7f92;
 	text-align: right;
-	font-size: .9em;
-	font-weight: 700;
+	font: 400 .9em 'Proxima Nova', 'Helvetica', sans-serif;
+	letter-spacing: 1px; 
 }
 
 .apply-blurb {
 	color: #6c7f92;
-	font-size: .5em;
 	letter-spacing: initial;
 }
 
@@ -135,4 +146,11 @@ button {
 
 .quote-photo {
 	margin: 3em 0 1em 0;
+	text-align: center; 
 }
+
+
+
+
+
+
