@@ -14,12 +14,18 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 p {
-	font-family: 'Palatino', serif; 
+	font-family: 'Georgia', serif; 
+	letter-spacing: .3px; 
 }
 
 .row {
 	padding: 0 2em 0 2em;
 	max-width: 800px;
+}
+
+.columns {
+	padding-left: 0; 
+	padding-right: 0;
 }
 
 /* -- SECTIONS -- */
@@ -95,6 +101,7 @@ ul {
 .apply-blurb {
 	color: #6c7f92;
 	letter-spacing: initial;
+	padding-right: .5em;
 }
 
 /* -- BUTTONS -- */
@@ -107,6 +114,10 @@ button {
 	margin-top: 1.7em;
 	padding: .8em 0 .8em 0;
 	width: 300px;
+}
+
+.btn-bottom {
+	max-width:100%;
 }
 
 /* -- IMAGES -- */
@@ -157,10 +168,9 @@ button {
 		cursor: pointer;
 		display: block;
 		overflow:hidden;
-		height: 56px;
+		height: 64px;
 		position:relative;
-		padding-top: 1.1em;
-		padding-left: 1em;
+		padding: 1.7em;
 		-webkit-transition: text-indent 0.2s;
 		width: 100%;
 	}
@@ -173,7 +183,7 @@ button {
 	.position-descriptions .content {
 		display: none;
 		height: 0;
-		margin: 3em 0 2em 0;
+		margin: 1.2em 0 2em 0;
 		position: relative;
 		text-align: left;
 	}
@@ -188,3 +198,11 @@ button {
 		transition: height 0.8s;
 		-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
+
+
+
+
+
+
+
+
