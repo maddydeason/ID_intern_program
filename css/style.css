@@ -142,10 +142,6 @@ button {
 	margin: 3em 0 1em 0;
 }
 
-.down-arrow {
-	width: 10px;
-}
-
 /* -- ACCORDIAN --*/
 .position {
 	font: 700 1.1em 'Proxima Nova', 'Helvetica', sans-serif;
@@ -161,20 +157,27 @@ button {
 	letter-spacing: .5px; 
 }
 
-.content ul {
-	font-family: 'Georgia', serif; 
-	font-size: .95em;
-}
-
 .position-descriptions {
     margin:0 auto;
     position:relative;
 }
+	.position-descriptions .content {
+		display: none;
+		height: 0;
+		margin: 1.2em 0 2em 0;
+		position: relative;
+		text-align: left;
+	}
+		.content ul {
+			font-family: 'Georgia', serif; 
+			font-size: .95em;
+		}
+
 	.position-descriptions label{
 		cursor: pointer;
 		display: block;
-		overflow:hidden;
 		height: 64px;
+		overflow:hidden;
 		position:relative;
 		padding: 1.7em;
 		-webkit-transition: text-indent 0.2s;
@@ -183,19 +186,34 @@ button {
 		.position-descriptions label:hover {
 			background: #e2e6ea;
 		}
-	.position-descriptions input[type="checkbox"] {
-		display: none;
-	}
-	.position-descriptions .content {
-		display: none;
-		height: 0;
-		margin: 1.2em 0 2em 0;
+
+	.position-descriptions input[type=checkbox]{
+		float: right;
 		position: relative;
-		text-align: left;
+		top: 5.25em;
+		right: .5em;
+		visibility: hidden;
+		z-index: 1;
 	}
-	.position-descriptions input[type="checkbox"]:checked + label > .content {
-		display: block;
-	}
+		.position-descriptions input[type=checkbox]::after{
+			content: '';
+  			position: absolute;
+			visibility: visible;
+			width: 0; 
+			height: 0;
+			transition: .4s ease-in-out;
+	
+			/* Arrow is Pure CSS meaning it is sizable and you can change its colour! */
+			border-right: 6px solid transparent;
+			border-left: 6px solid transparent;
+			border-top: 6px solid #6c7f92;
+		}
+
+		/* :Rotate Arrow */
+		.position-descriptions input[type=checkbox]:checked::after{
+			transform: rotate(-180deg);
+		}
+
 	.position-descriptions input[type="checkbox"]:checked + label {
 		background: #e2e6ea;
 		display: block;
@@ -205,11 +223,8 @@ button {
 		transition: height 0.8s;
 		-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
-
-
-
-
-
-
+	.position-descriptions input[type="checkbox"]:checked + label > .content {
+		display: block;
+	}
 
 
