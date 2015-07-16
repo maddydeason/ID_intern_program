@@ -14,5 +14,3 @@ landing page for the Industry Dive summer intern program
 
 ##live version:
 < coming soon >
-
-#this is a test
