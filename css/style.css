@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, ul {
 
 p {
 	font-family: 'Georgia', serif; 
-	letter-spacing: .3px; 
+	font-size: .95em; 
 }
 
 .row {
@@ -41,6 +41,7 @@ p {
 
 .internship-specifics {
 	margin-top: 1.5em;
+	margin-bottom: 1.5em; 
 }
 
 .apply-now {
@@ -94,8 +95,9 @@ h6 {
 }
 
 ul {
-	margin-bottom: 4em;
-	margin-top: 1em;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	color: #2f2f2f;
 }
 
 .apply-blurb {
@@ -156,8 +158,12 @@ button {
 	font: 400 1em 'Proxima Nova', 'Helvetica', sans-serif;
 	color: #6c7f92;
 	float: right;
-	margin-right: 1em;
 	letter-spacing: .5px; 
+}
+
+.content ul {
+	font-family: 'Georgia', serif; 
+	font-size: .95em;
 }
 
 .position-descriptions {
@@ -193,7 +199,8 @@ button {
 	.position-descriptions input[type="checkbox"]:checked + label {
 		background: #e2e6ea;
 		display: block;
-		height: 20em;
+		height: 28em;
+		font-size: 1em;
 		-webkit-transition: height 0.8s;
 		transition: height 0.8s;
 		-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
