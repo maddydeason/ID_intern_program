@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6, ul {
 
 p {
 	font-family: 'Georgia', serif; 
-	font-size: .95em; 
 }
 
 .row {
@@ -29,8 +28,14 @@ p {
 }
 
 /* -- SECTIONS -- */
+.top-bar {
+	height: 50px;
+	background-color: black; 
+}
+
 .top-section {
-	margin-top: 3em;
+	margin-top: 5em;
+	margin-bottom: 5em; 
 	text-align: center;
 }
 
@@ -59,6 +64,7 @@ p {
 h1 {
 	color: #6c7f92;
 	margin-bottom: .5em;
+	font-size: 3.5em; 
 }
 
 h2 {
@@ -68,12 +74,13 @@ h2 {
 }
 
 h4 {
-	font-weight: bold;
+	font-weight: 800;
+	font-size: 1.5em; 
 	letter-spacing: 1.5px;
 	margin-bottom: .5em;
 	margin-top: 2em;
 }
-
+ 
 h5 {
 	font-weight: 400;
 }
@@ -83,7 +90,7 @@ h6 {
 }
 
 .quote-text {
-	font-family: "Palatino", serif;
+	font-family: 'Georgia', serif;
 	font-size: .8em;
 	max-width: 180px;
 }
@@ -100,10 +107,14 @@ ul {
 	color: #2f2f2f;
 }
 
+.perks-list {
+	padding-right: 1em;
+}
+
 .apply-blurb {
 	color: #6c7f92;
 	letter-spacing: initial;
-	padding-right: .5em;
+	padding-right: 1.2em;
 }
 
 /* -- BUTTONS -- */
@@ -112,14 +123,15 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	letter-spacing: 1.5px;
-	margin-bottom: 4em;
 	margin-top: 1.7em;
 	padding: .8em 0 .8em 0;
 	width: 300px;
+	transition: background-color 0.5s ease;
+	background-color: #d62828;
 }
 
 .btn-bottom {
-	max-width:100%;
+	width:100%;
 }
 
 /* -- IMAGES -- */
@@ -148,10 +160,10 @@ button {
 
 /* -- ACCORDIAN --*/
 .position {
-	font: 700 1.1em 'Proxima Nova', 'Helvetica', sans-serif;
+	font: 700 1.2em 'Proxima Nova', 'Helvetica', sans-serif;
 	letter-spacing: 1px;
 	float: left;
-	text-transform: uppercase;
+	text-transform: uppercase; 
 }
 
 .learn-more {
@@ -163,7 +175,6 @@ button {
 
 .content ul {
 	font-family: 'Georgia', serif; 
-	font-size: .95em;
 }
 
 .position-descriptions {
@@ -200,12 +211,13 @@ button {
 		background: #e2e6ea;
 		display: block;
 		height: 28em;
-		font-size: 1em;
 		-webkit-transition: height 0.8s;
 		transition: height 0.8s;
 		-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
-
+	input[type="checkbox"] + label, input[type="radio"] + label {
+		margin-left: 0px;
+	}
 
 
 
