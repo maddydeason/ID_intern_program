@@ -156,6 +156,8 @@ button {
 
 .quote-photo {
 	margin: 3em 0 1em 0;
+	height: 150px;
+	width: 150px;
 }
 
 /* -- ACCORDIAN --*/
