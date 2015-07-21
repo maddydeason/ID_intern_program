@@ -34,24 +34,29 @@ p {
 }
 
 .top-section {
-	margin-top: 5em;
-	margin-bottom: 5em; 
+	margin-top: 9em;
+	margin-bottom: 9em; 
 	text-align: center;
+	max-height: 55%;
 }
 
 .about-id-section {
-	margin-top: 1.5em;
-	margin-bottom: 4em;
+	margin-top: 4.5em;
+	margin-bottom: 5em; 
 }
 
 .internship-specifics {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em; 
+	margin-top: 4.5em;
+	margin-bottom: 1em; 
 }
 
 .apply-now {
-	margin-bottom: 3em;
-	margin-top: 2em;
+	padding-bottom: 4em;
+	padding-top: 4.5em;
+	margin-top: 4.5em;
+	background-color: #e2e6ea;
+	background: cover; 
+	width: 100%;
 }
 
 .footer-bar {
@@ -65,6 +70,7 @@ h1 {
 	color: #6c7f92;
 	margin-bottom: .5em;
 	font-size: 3.5em; 
+	line-height: 1.2em; 
 }
 
 h2 {
@@ -75,10 +81,10 @@ h2 {
 
 h4 {
 	font-weight: 800;
-	font-size: 1.5em; 
+	font-size: 2em; 
 	letter-spacing: 1.5px;
 	margin-bottom: .5em;
-	margin-top: 2em;
+	line-height: 1.3em; 
 }
  
 h5 {
@@ -93,7 +99,9 @@ h6 {
 	font-family: 'Georgia', serif;
 	font-size: .8em;
 	max-width: 180px;
+	padding-top: .8em; 
 }
+
 .attribution {
 	max-width: 180px;
 	font-size: .9em;
@@ -123,7 +131,7 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	letter-spacing: 1.5px;
-	margin-top: 1.7em;
+	margin-top: 2em; 
 	padding: .8em 0 .8em 0;
 	width: 300px;
 	transition: background-color 0.5s ease;
@@ -131,17 +139,17 @@ button {
 }
 
 .btn-bottom {
-	width:100%;
+	margin-top: 1.3em;
 }
 
 /* -- IMAGES -- */
 .banner-img1 {
-	background: url(../img/editorial_pic.jpg) no-repeat center center fixed;
+	background: url(../img/office_pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
 .banner-img2 {
-	background: url(../img/chinatown.jpg) no-repeat center center fixed;
+	background: url(../img/chinatown_pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -152,6 +160,8 @@ button {
 
 .quote-photo {
 	margin: 3em 0 1em 0;
+	height: 150px;
+	width: 150px;
 }
 
 /* -- ACCORDIAN --*/
@@ -239,4 +249,20 @@ button {
 		display: block;
 	}
 
+
+/*media queries*/
+@media only screen and (max-width: 40em) { /*small only*/
+	button {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 40.063em) { /*medium and up*/
+	.apply-blurb {
+		width: 95%;
+	}
+	.about-id-text {
+		text-align: center; 
+	}
+}
 
