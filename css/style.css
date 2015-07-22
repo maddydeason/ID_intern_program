@@ -50,7 +50,7 @@ p {
 	margin-bottom: 1em; 
 }
 
-.apply-now {
+#apply-now {
 	padding-bottom: 4em;
 	padding-top: 4.5em;
 	margin-top: 4.5em;
@@ -129,15 +129,13 @@ ul {
 
 /* -- BUTTONS -- */
 button {
-	border-bottom: 5px solid #ab2020;
 	font-size: 1em;
 	font-weight: 500;
 	letter-spacing: 1.5px;
 	margin-top: 2em; 
-	padding: .8em 0 .8em 0;
-	width: 300px;
-	transition: background-color 0.5s ease;
-	background-color: #d62828;
+	padding: .8em 2em .8em 2em;
+	/*transition: background-color 0.5s ease;
+	background-color: #d62828;*/
 }
 
 .btn-bottom {
