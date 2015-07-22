@@ -34,10 +34,9 @@ p {
 }
 
 .top-section {
-	margin-top: 9em;
-	margin-bottom: 2em; 
+	padding-top: 5em; 
+	padding-bottom: 1.5em; 
 	text-align: center;
-	max-height: 55%;
 }
 
 .about-id-section {
@@ -69,9 +68,9 @@ p {
 /* -- TEXT -- */
 h1 {
 	color: #6c7f92;
-	margin-bottom: .5em;
+	margin: .75em 0 .5em 0;
 	font-size: 3.5em; 
-	line-height: 1.2em; 
+	line-height: 1.2em;
 }
 
 h2 {
@@ -170,7 +169,7 @@ button {
 .arrow {
 	width: 25px;
 	height: 25px;
-	margin-top: 6em;
+	margin-top: 4.5em;
 }
 
 /* -- ACCORDIAN --*/
@@ -263,6 +262,12 @@ button {
 @media only screen and (max-width: 40em) { /*small only*/
 	button {
 		width: 100%;
+	}
+	.top-section {
+		padding-top: 2em; 
+	}
+	.arrow {
+		margin-top: 3em;
 	}
 }
 
