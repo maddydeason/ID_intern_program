@@ -9,7 +9,7 @@ p, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul, a {
 	font-family: 'Proxima Nova', 'Helvetica', sans-serif; 
 }
 
@@ -43,6 +43,10 @@ p {
 	margin-top: 4.5em;
 	margin-bottom: 5em; 
 	text-align: center; 
+}
+
+.about-id-section a {
+	font-size: .8em;
 }
 
 .internship-specifics {
@@ -109,6 +113,7 @@ h6 {
 	font-weight: 700;
 	font-family: 'Proxima Nova', 'Helvetica', sans-serif; 
 	text-align: center;
+	margin-top: .5em;
 }
 
 ul {
@@ -260,6 +265,9 @@ button {
 @media only screen and (max-width: 40em) { /*small only*/
 	button {
 		width: 100%;
+	}	
+	.btn-quote {
+		width: 50%; 
 	}
 	.top-section {
 		padding-top: 2em; 
