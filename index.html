@@ -80,16 +80,13 @@
 
     <div class="row position-descriptions">
 
-      <input id='audience-development' type='checkbox'>
-        <label for='audience-development'>
-          <div class'small-6 columns'>
-            <p class="position">audience <br class="show-for-small-only">development</p>
-          </div><!-- small-6 columns -->
-          <div class'small-6 columns'>
-            <p class="learn-more">learn more &nbsp;&nbsp;</p>
-          </div><!-- small-6 columns -->
-          <div class='content columns'>
-            <p>Audience development interns are driven to get people connected with our content. From Day 1, your work will be the first exposure prospective readers and subscribers have to Industry Dive, making your impact immediate and crucial to the organization.</p>
+      <ul class="accordion" data-accordion>
+        <li class="accordion-navigation">
+          <a href="#panel1a">
+              <p><span class="position">audience <br class="show-for-small-only">development</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>
+          </a>
+          <div id="panel1a" class="content">
+            Audience development interns are driven to get people connected with our content. From Day 1, your work will be the first exposure prospective readers and subscribers have to Industry Dive, making your impact immediate and crucial to the organization.
             <br>
             <p>Requirements:</p>
             <ul>
@@ -98,17 +95,13 @@
               <li>Experience with social media channels, specifically Twitter and LinkedIn</li>
             </ul>
           </div><!-- content -->
-        </label>
+        </li>
 
-        <input id='design' type='checkbox'>
-        <label for='design'>
-          <div class'small-6 columns'>
-            <p class="position">design</p>
-          </div><!-- small-6 columns -->
-          <div class'small-6 columns'>
-            <p class="learn-more">learn more &nbsp;&nbsp;</p>
-          </div><!-- small-6 columns -->
-          <div class='content columns'>
+        <li class="accordion-navigation">
+          <a href="#panel2a">
+            <p><span class="position">design</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>
+          </a>
+          <div id="panel2a" class="content">
             <p>Design interns are web design experts - they know what looks good, are up on the latest design trends and are always hungry for more. You love typography and can’t resist “inspecting the element” on the webpages you love.</p>
             <br>
             <p>Requirements:</p>
@@ -119,18 +112,14 @@
               <li>Ideally, you are familiar with Javascript and Github</li>
             </ul>
             <p>We tailor the internship to your strengths so don't worry if you don't meet all the requirements. Please include a link to your portfolio in your application.</p>
-          </div><!-- content -->
-        </label>
+          </div>
+        </li>
 
-        <input id='editorial' type='checkbox'>
-        <label for='editorial'>
-          <div class'small-6 columns'>
-            <p class="position">editorial</p>
-          </div><!-- small-6 columns -->
-          <div class'small-6 columns'>
-            <p class="learn-more">learn more &nbsp;&nbsp;</p>
-          </div><!-- small-6 columns -->
-          <div class='content columns'>
+        <li class="accordion-navigation">
+          <a href="#panel3a">
+            <p><span class="position">editorial</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>
+          </a>
+          <div id="panel3a" class="content">
             <p>Editorial interns are curious. They are eager to learn about current issues and love to inform others about them. As an editorial intern, you will work closely with the other editors researching, interviewing and writing about the most compelling industry topics.</p>
             <br>
             <p>Requirements:</p>
@@ -140,18 +129,14 @@
               <li>Interest in current affairs and business and ability to take apart complex issues</li>
             </ul>
             <p>Please include two writing samples in your application.</p>
-          </div><!-- content -->
-        </label>
+          </div>
+        </li>
 
-        <input id='marketing' type='checkbox'>
-        <label for='marketing'>
-          <div class'small-6 columns'>
-            <p class="position">marketing</p>
-          </div><!-- small-6 columns -->
-          <div class'small-6 columns'>
-            <p class="learn-more">learn more &nbsp;&nbsp;</p>
-          </div><!-- small-6 columns -->
-          <div class='content columns'>
+        <li class="accordion-navigation">
+          <a href="#panel4a">
+            <p><span class="position">marketing</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>
+          </a>
+          <div id="panel4a" class="content">
             <p>Marketing interns are the go-getters, the executors, part of the get-it-done team. You’ll have your hands in every part of the brand studio process so be ready to hit the ground running.</p>
             <br>
             <p>Requirements:</p>
@@ -161,21 +146,18 @@
               <li>Interest in branding and social media????</li>
             </ul>
             <p>Please include two writing samples in your application.</p>
-          </div><!-- content -->
-        </label>
+          </div>
+        </li>
 
-        <input id='tech' type='checkbox'>
-        <label for='tech'>
-          <div class'small-6 columns'>
-            <p class="position">tech</p>
-          </div><!-- small-6 columns -->
-          <div class'small-6 columns'>
-            <p class="learn-more">learn more &nbsp;&nbsp;</p>
-          </div><!-- small-6 columns -->
-          <div class='content columns'>
+        <li class="accordion-navigation">
+          <a href="#panel5a">
+            <p><span class="position">tech</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>
+          </a>
+          <div id="panel5a" class="content">
             <p>Auris congue massa vitae vulputate pharetra. Cras ligula sem, elementum tincidunt blandit ut, ultrices id est. Suspendisse nec risus nisl. Ut vitae magna sed tortor consectetur vulputate vitae viverra nisi. Nulla et ipsum in nulla sagittis egestas vel eu nunc.</p>
-          </div><!-- content -->
-        </label>
+          </div>
+        </li>
+      </ul>
 
     </div><!-- row position-descriptions -->
 
@@ -196,7 +178,7 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-
+    <script src="js/fancyAccordion.js"></script>
     <script>
       $(document).foundation();
     </script>

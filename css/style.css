@@ -154,38 +154,54 @@ button {
 	margin: 3em 0 1em 0;
 }
 
+.down-arrow {
+	width: 10px;
+}
+
 /* -- ACCORDIAN --*/
 .position {
-	font: 700 1.2em 'Proxima Nova', 'Helvetica', sans-serif;
+	font: 700 1.1em 'Proxima Nova', 'Helvetica', sans-serif;
 	letter-spacing: 1px;
-	float: left;
-	text-transform: uppercase; 
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .learn-more {
-	font: 400 1em 'Proxima Nova', 'Helvetica', sans-serif;
 	color: #6c7f92;
+	font: 400 .9em 'Proxima Nova', 'Helvetica', sans-serif;
+	letter-spacing: .5px;
 	float: right;
-	letter-spacing: .5px; 
 }
 
 .position-descriptions {
     margin:0 auto;
     position:relative;
 }
-	.position-descriptions .content {
-		display: none;
-		height: 0;
-		margin: 1.2em 0 2em 0;
-		position: relative;
-		text-align: left;
-	}
-		.content ul {
-			font-family: 'Georgia', serif; 
-			font-size: .95em;
-		}
 
-	.position-descriptions label{
+.content {
+	display: none;
+	height: auto;
+	margin: 0 0 1em 0;
+	position: relative;
+	text-align: left;
+}
+	.content ul {
+		font-family: 'Georgia', serif; 
+		font-size: .95em;
+	}
+
+.accordion .accordion-navigation > a {
+	background: none;
+}
+	.accordion .accordion-navigation > a:hover, .accordion .accordion-navigation.active > a {
+		background: #e2e6eA;
+	}
+
+.accordion .accordion-navigation > .content.active {
+	background: #e2e6ea;
+}
+
+/*	.position-descriptions label{
 		cursor: pointer;
 		display: block;
 		height: 64px;
@@ -215,13 +231,13 @@ button {
 			height: 0;
 			transition: .4s ease-in-out;
 	
-			/* Arrow is Pure CSS meaning it is sizable and you can change its colour! */
+			 Arrow is Pure CSS meaning it is sizable and you can change its colour! 
 			border-right: 6px solid transparent;
 			border-left: 6px solid transparent;
 			border-top: 6px solid #6c7f92;
 		}
 
-		/* :Rotate Arrow */
+		/* :Rotate Arrow 
 		.position-descriptions input[type=checkbox]:checked::after{
 			transform: rotate(-180deg);
 		}
@@ -240,3 +256,4 @@ button {
 	}
 
 
+*/
