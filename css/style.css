@@ -9,7 +9,7 @@ p, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul, a {
 	font-family: 'Proxima Nova', 'Helvetica', sans-serif; 
 }
 
@@ -34,24 +34,33 @@ p {
 }
 
 .top-section {
-	margin-top: 5em;
-	margin-bottom: 5em; 
+	padding-top: 5em; 
+	padding-bottom: 1.5em; 
 	text-align: center;
 }
 
 .about-id-section {
-	margin-top: 1.5em;
-	margin-bottom: 4em;
+	margin-top: 4.5em;
+	margin-bottom: 5em; 
+	text-align: center; 
+}
+
+.about-id-section a {
+	font-size: .8em;
 }
 
 .internship-specifics {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em; 
+	margin-top: 4.5em;
+	margin-bottom: 1em; 
 }
 
-.apply-now {
-	margin-bottom: 3em;
-	margin-top: 2em;
+#apply-now {
+	padding-bottom: 4em;
+	padding-top: 4.5em;
+	margin-top: 4.5em;
+	background-color: #e2e6ea;
+	background: cover; 
+	width: 100%;
 }
 
 .footer-bar {
@@ -63,8 +72,9 @@ p {
 /* -- TEXT -- */
 h1 {
 	color: #6c7f92;
-	margin-bottom: .5em;
+	margin: .75em 0 .5em 0;
 	font-size: 3.5em; 
+	line-height: 1.2em;
 }
 
 h2 {
@@ -75,10 +85,10 @@ h2 {
 
 h4 {
 	font-weight: 800;
-	font-size: 1.5em; 
+	font-size: 2em; 
 	letter-spacing: 1.5px;
 	margin-bottom: .5em;
-	margin-top: 2em;
+	line-height: 1.3em; 
 }
  
 h5 {
@@ -93,12 +103,17 @@ h6 {
 	font-family: 'Georgia', serif;
 	font-size: .8em;
 	max-width: 180px;
+	padding-top: .8em; 
+	text-align: center;
 }
+
 .attribution {
 	max-width: 180px;
 	font-size: .9em;
 	font-weight: 700;
 	font-family: 'Proxima Nova', 'Helvetica', sans-serif; 
+	text-align: center;
+	margin-top: .5em;
 }
 
 ul {
@@ -119,29 +134,27 @@ ul {
 
 /* -- BUTTONS -- */
 button {
-	border-bottom: 5px solid #ab2020;
 	font-size: 1em;
 	font-weight: 500;
 	letter-spacing: 1.5px;
-	margin-top: 1.7em;
-	padding: .8em 0 .8em 0;
-	width: 300px;
-	transition: background-color 0.5s ease;
-	background-color: #d62828;
+	margin-top: 2em; 
+	padding: .8em 2em .8em 2em;
+	/*transition: background-color 0.5s ease;
+	background-color: #d62828;*/
 }
 
 .btn-bottom {
-	width:100%;
+	margin-top: 1.3em;
 }
 
 /* -- IMAGES -- */
 .banner-img1 {
-	background: url(../img/editorial_pic.jpg) no-repeat center center fixed;
+	background: url(../img/office_pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
 .banner-img2 {
-	background: url(../img/chinatown.jpg) no-repeat center center fixed;
+	background: url(../img/chinatown_pic.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -152,6 +165,14 @@ button {
 
 .quote-photo {
 	margin: 3em 0 1em 0;
+	height: 150px;
+	width: 150px;
+}
+
+.arrow {
+	width: 25px;
+	height: 25px;
+	margin-top: 4.5em;
 }
 
 .arrow {
@@ -162,28 +183,6 @@ button {
 
 .down-arrow {
 	width: 10px;
-}
-
-/*media queries*/
-@media only screen and (max-width: 40em) { /*small only*/
-	button {
-		width: 100%;
-	}	
-	.btn-quote {
-		width: 50%; 
-	}
-	.top-section {
-		padding-top: 2em; 
-	}
-	.arrow {
-		margin-top: 3em;
-	}
-}
-
-@media only screen and (min-width: 40.063em) { /*medium and up*/
-	.apply-blurb {
-		width: 95%;
-	}
 }
 
 /* -- ACCORDIAN --*/
@@ -228,3 +227,26 @@ button {
 .accordion .accordion-navigation > .content.active {
 	background: #e2e6ea;
 }
+
+/*media queries*/
+@media only screen and (max-width: 40em) { /*small only*/
+	button {
+		width: 100%;
+	}	
+	.btn-quote {
+		width: 50%; 
+	}
+	.top-section {
+		padding-top: 2em; 
+	}
+	.arrow {
+		margin-top: 3em;
+	}
+}
+
+@media only screen and (min-width: 40.063em) { /*medium and up*/
+	.apply-blurb {
+		width: 95%;
+	}
+}
+
