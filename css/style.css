@@ -154,8 +154,36 @@ button {
 	margin: 3em 0 1em 0;
 }
 
+.arrow {
+	width: 25px;
+	height: 25px;
+	margin-top: 4.5em;
+}
+
 .down-arrow {
 	width: 10px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 40em) { /*small only*/
+	button {
+		width: 100%;
+	}	
+	.btn-quote {
+		width: 50%; 
+	}
+	.top-section {
+		padding-top: 2em; 
+	}
+	.arrow {
+		margin-top: 3em;
+	}
+}
+
+@media only screen and (min-width: 40.063em) { /*medium and up*/
+	.apply-blurb {
+		width: 95%;
+	}
 }
 
 /* -- ACCORDIAN --*/
@@ -200,60 +228,3 @@ button {
 .accordion .accordion-navigation > .content.active {
 	background: #e2e6ea;
 }
-
-/*	.position-descriptions label{
-		cursor: pointer;
-		display: block;
-		height: 64px;
-		overflow:hidden;
-		position:relative;
-		padding: 1.7em;
-		-webkit-transition: text-indent 0.2s;
-		width: 100%;
-	}
-		.position-descriptions label:hover {
-			background: #e2e6ea;
-		}
-
-	.position-descriptions input[type=checkbox]{
-		float: right;
-		position: relative;
-		top: 5.25em;
-		right: .5em;
-		visibility: hidden;
-		z-index: 1;
-	}
-		.position-descriptions input[type=checkbox]::after{
-			content: '';
-  			position: absolute;
-			visibility: visible;
-			width: 0; 
-			height: 0;
-			transition: .4s ease-in-out;
-	
-			 Arrow is Pure CSS meaning it is sizable and you can change its colour! 
-			border-right: 6px solid transparent;
-			border-left: 6px solid transparent;
-			border-top: 6px solid #6c7f92;
-		}
-
-		/* :Rotate Arrow 
-		.position-descriptions input[type=checkbox]:checked::after{
-			transform: rotate(-180deg);
-		}
-
-	.position-descriptions input[type="checkbox"]:checked + label {
-		background: #e2e6ea;
-		display: block;
-		height: 28em;
-		-webkit-transition: height 0.8s;
-		transition: height 0.8s;
-		-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	}
-
-	.position-descriptions input[type="checkbox"]:checked + label > .content {
-		display: block;
-	}
-
-
-*/
