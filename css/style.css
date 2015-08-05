@@ -231,7 +231,6 @@ button {
 .tech-intern {
 	font-weight: 700; 
 }
-
 /*media queries*/
 @media only screen and (max-width: 40em) { /*small only*/
 	button {
