@@ -27,6 +27,14 @@ p {
 	padding-right: 0;
 }
 
+.margin-bottom-2em {
+	margin-bottom: 2em;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
 /* -- SECTIONS -- */
 .top-bar {
 	height: 50px;
@@ -54,10 +62,14 @@ p {
 	margin-bottom: 1em; 
 }
 
+.position-descriptions {
+	margin: 3em auto;
+	position:relative;
+}
+
 #apply-now {
 	padding-bottom: 4em;
 	padding-top: 4.5em;
-	margin-top: 4.5em;
 	background-color: #e2e6ea;
 	background: cover; 
 	width: 100%;
@@ -116,7 +128,7 @@ h6 {
 	margin-top: .5em;
 }
 
-ul {
+ul .accordion {
 	margin-bottom: 1.5em;
 	margin-top: 1.5em;
 	color: #2f2f2f;
@@ -124,6 +136,7 @@ ul {
 
 .perks-list {
 	padding-right: 1em;
+	margin-bottom: 0
 }
 
 .apply-blurb {
@@ -192,11 +205,6 @@ button {
 	font: 400 .9em 'Proxima Nova', 'Helvetica', sans-serif;
 	letter-spacing: .5px;
 	float: right;
-}
-
-.position-descriptions {
-    margin:0 auto;
-    position:relative;
 }
 
 .content {
