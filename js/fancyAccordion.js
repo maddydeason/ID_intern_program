@@ -1,11 +1,11 @@
 $(document).ready(function($) {
 
   $('.accordion a').click(function(j) {
-    var dropDown = $(this).closest('li').find('.content');
-    //var activeLearnmore = $(this).closest('li').find('learn-more');
+    var dropDown = $(this).closest('.accordion-navigation').find('.content');
+    var activeLearnmore = $(this).closest('.accordion-navigation').find('.learn-more');
 
     $(this).closest('.accordion').find('.content').not(dropDown).slideUp('normal');
-    //$(this).closest('.accordion').find('.learn-more').not(activeLearnmore)[0].innerHTML = "learn more &nbsp;&nbsp;<img class='down-arrow' src='img/down.png'>";
+    $(this).closest('.accordion').find('.learn-more').not(activeLearnmore)[0].innerHTML = "learn more &nbsp;&nbsp;<img class='down-arrow' src='img/down.png'>";
 
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');

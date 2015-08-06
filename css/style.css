@@ -128,12 +128,6 @@ h6 {
 	margin-top: .5em;
 }
 
-ul .accordion {
-	margin-bottom: 1.5em;
-	margin-top: 1.5em;
-	color: #2f2f2f;
-}
-
 .perks-list {
 	padding-right: 1em;
 	margin-bottom: 0
@@ -143,6 +137,10 @@ ul .accordion {
 	color: #6c7f92;
 	letter-spacing: initial;
 	padding-right: 1.2em;
+}
+
+.accordion-subheader {
+	font-weight: 700; 
 }
 
 /* -- BUTTONS -- */
@@ -192,6 +190,14 @@ button {
 	width: 10px;
 }
 
+.project-img {
+	width: 200px;
+}
+	.project-img:hover {
+		cursor: pointer;
+		opacity: .5;
+	}
+
 /* -- ACCORDIAN --*/
 .position {
 	font: 700 1.1em 'Proxima Nova', 'Helvetica', sans-serif;
@@ -205,6 +211,12 @@ button {
 	font: 400 .9em 'Proxima Nova', 'Helvetica', sans-serif;
 	letter-spacing: .5px;
 	float: right;
+}
+
+ul .accordion {
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	color: #2f2f2f;
 }
 
 .content {
@@ -230,9 +242,6 @@ button {
 	background: #e2e6ea;
 }
 
-.tech-intern {
-	font-weight: 700; 
-}
 /*media queries*/
 @media only screen and (max-width: 40em) { /*small only*/
 	button {
