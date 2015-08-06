@@ -175,13 +175,7 @@ button {
 	margin-top: 4.5em;
 }
 
-.arrow {
-	width: 25px;
-	height: 25px;
-	margin-top: 4.5em;
-}
-
-.down-arrow {
+.down-arrow, .up-arrow {
 	width: 10px;
 }
 
