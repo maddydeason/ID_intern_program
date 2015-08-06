@@ -1,3 +1,4 @@
+// the accordion now known as sexyAccordian
 $(document).ready(function($) {
 
   $('.accordion a').click(function(j) {
