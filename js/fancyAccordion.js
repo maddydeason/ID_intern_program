@@ -27,6 +27,15 @@
 $(document).ready(function(){
   $(".content").hide(); 
 
+  /*$('.accordion .accordion-navigation a').click(function(j) {
+
+    var targetElement = $(this).next('.mod-content');
+
+    targetElement.slideToggle();
+    targetElement.siblings('.mod-content').slideUp();
+
+  });*/
+
   $(".audience-dev").click(function(){
 
       $(this).toggleClass("active").next().slideToggle("fast");
@@ -50,6 +59,48 @@ $(document).ready(function(){
       } 
       else {
           $(this).html('<p><span class="position">design</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>');        
+      }
+      
+      return false; 
+  });
+
+  $(".editorial").click(function(){
+
+      $(this).toggleClass("active").next().slideToggle("fast");
+      
+      if ($.trim($(this).html()) === '<p><span class="position">editorial</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>') {
+          $(this).html('<p><span class="position">editorial</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>');
+      } 
+      else {
+          $(this).html('<p><span class="position">editorial</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>');        
+      }
+      
+      return false; 
+  });
+
+  $(".marketing").click(function(){
+
+      $(this).toggleClass("active").next().slideToggle("fast");
+      
+      if ($.trim($(this).html()) === '<p><span class="position">marketing</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>') {
+          $(this).html('<p><span class="position">marketing</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>');
+      } 
+      else {
+          $(this).html('<p><span class="position">marketing</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>');        
+      }
+      
+      return false; 
+  });
+
+  $(".tech").click(function(){
+
+      $(this).toggleClass("active").next().slideToggle("fast");
+      
+      if ($.trim($(this).html()) === '<p><span class="position">tech</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>') {
+          $(this).html('<p><span class="position">tech</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>');
+      } 
+      else {
+          $(this).html('<p><span class="position">tech</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>');        
       }
       
       return false; 
