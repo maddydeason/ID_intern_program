@@ -237,6 +237,7 @@ ul .accordion {
 
 .accordion .accordion-navigation > a {
 	background: none;
+	padding: 1.5rem;
 }
 
 .accordion .accordion-navigation > a:hover {
@@ -245,6 +246,10 @@ ul .accordion {
 
 .accordion .accordion-navigation > .active, .accordion .accordion-navigation > .content {
 	background: #e2e6ea;
+}
+
+.accordion .accordion-navigation > .content {
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 /*media queries*/
