@@ -206,6 +206,10 @@ button {
 	text-transform: uppercase;
 }
 
+.position-descriptions .accordion {
+	margin-left:0; 
+}
+
 .learn-more {
 	color: #6c7f92;
 	font: 400 .9em 'Proxima Nova', 'Helvetica', sans-serif;
@@ -234,11 +238,12 @@ ul .accordion {
 .accordion .accordion-navigation > a {
 	background: none;
 }
-	.accordion .accordion-navigation > a:hover, .accordion .accordion-navigation.active > a {
-		background: #e2e6eA;
-	}
 
-.accordion .accordion-navigation > .content.active {
+.accordion .accordion-navigation > a:hover {
+	background: #e2e6eA;
+}
+
+.accordion .accordion-navigation > .active, .accordion .accordion-navigation > .content {
 	background: #e2e6ea;
 }
 
