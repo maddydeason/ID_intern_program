@@ -24,17 +24,34 @@
   });
 })(jQuery);*/
 
-$(document).ready(function(){
-  $(".content").hide(); 
+$(document).ready(function($){
 
-  /*$('.accordion .accordion-navigation a').click(function(j) {
+  var oneAtTime = true; // if only want one open at a time
+  
+  $(".accordion .accordion-navigation a").click(function() {
+    $(".accordion .accordion-navigation a").removeClass("active");
+    if ( $(this).next(".content").is(":visible") ) {
+      $(this).next(".content").slideUp();
+    }
+    else {
+      if (oneAtTime == true) {
+        $(".content").slideUp();
+      }
+      $(this).next(".content").slideDown();
+      $(this).addClass("active");
+    }
+  });
 
-    var targetElement = $(this).next('.mod-content');
-
-    targetElement.slideToggle();
-    targetElement.siblings('.mod-content').slideUp();
-
+  /*$(".audience-dev").click(function(){
+      if ($.trim($(this).html()) === '<p><span class="position">audience <br class="show-for-small-only">development</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>') {
+          $(this).html('<p><span class="position">audience <br class="show-for-small-only">development</span><span class="learn-more">learn more &nbsp;&nbsp;<img class="down-arrow" src="img/down.png"></span></p>');
+      } 
+      else {
+          $(this).html('<p><span class="position">audience <br class="show-for-small-only">development</span><span class="learn-more">close &nbsp;&nbsp;<img class="down-arrow" src="img/up.png"></span></p>');        
+      }
   });*/
+
+  /*$(".content").hide(); 
 
   $(".audience-dev").click(function(){
 
@@ -106,7 +123,17 @@ $(document).ready(function(){
       return false; 
   });
 
-   $("a[href='" + window.location.hash + "']").parent(".intern-department").click();
+  /*$('.accordion .accordion-navigation a').click(function(j) {
+
+    var targetElement = $(this).next('.content');
+
+    targetElement.slideToggle();
+    targetElement.siblings('.content').slideUp();
+
+  });*/
+
+   /*$("a[href='" + window.location.hash + "']").parent(".intern-department").click();*/
+
 });
 
 
